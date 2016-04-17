@@ -1,0 +1,28 @@
+<html>
+
+    <div>Input:</div>
+    <input type="text" id="input"></input>
+    <input type="button" value="Submit" onclick="check()"></input><input checked id="force" type="checkbox">forceFalsePos</input>
+    
+    <br><br>
+    
+    <div id="result"></div>
+
+    <!-- Lib -->
+    <script src="blasphemy.js"></script>
+    
+
+    <script>
+        
+        var check = function(){
+    
+            var input = document.getElementById("input").value;
+            var force = document.getElementById("force").checked;
+            blasphemy.forceFalsePos = force;
+            var result = blasphemy.judge(input, "*");
+            document.getElementById("result").innerHTML = "Result:<br><br>" + JSON.stringify(result);
+        }
+        
+    </script>
+
+</html>
