@@ -1,6 +1,6 @@
 # Blasphemy
 
-A simple offline javascript solution to checking and filtering profanity. Simply import blasphemy.js and get started!
+A simple offline javascript solution to checking and filtering profanity. Simply import [blasphemy.js](https://raw.githubusercontent.com/garrickbrazil/blasphemy/master/blasphemy.js) and get started!
 
 
 The primary funciton to be used is <code>blasphemy.judge('go badword yourself, '*')</code> which will return the following response:
